@@ -1,0 +1,82 @@
+//
+//  PrefixHeader.pch
+//  LessionDouBan
+//
+//  Created by lanou3g on 16/6/27.
+//  Copyright © 2016年 liman. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef DEBUG
+#define YCLog(...) NSLog(__VA_ARGS__)
+#else
+#define YCLog(...)
+#endif
+
+#define YCLogFunc YCLog(@"%s",__func__)
+#define YCLogWeb YCLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+
+#import <AFNetworking.h>
+
+#import "RequestUrl.h"
+
+#import "NetworkRequest.h"
+
+#import "ActivityRequest.h"
+#import "ActivityModel.h"
+
+#import "TheaterRequest.h"
+#import "TheaterModel.h"
+
+#import "MovieRequest.h"
+#import "MovieModel.h"
+
+#import "ActivityViewController.h"
+#import "TheaterViewController.h"
+#import "MovieViewController.h"
+#import "LoginViewController.h"
+#import "RegisterViewController.h"
+
+#import "ActivityDetailRequest.h"
+#import "MovieDetailRequest.h"
+
+#import "DouBanTabBar.h"
+
+#import "CommonString.h"
+
+#import "LoginRequest.h"
+#import "RegisterRequest.h"
+
+#import "MyHeaderTableViewCell.h"
+#import "MyTableViewCell.h"
+#import "ActivityTableViewCell.h"
+#import "MovieTableViewCell.h"
+#import "TheaterTableViewCell.h"
+
+//#import <SDImageCache.h>
+//#import <UIImageView+WebCache.h>
+#import <UIImageView+AFNetworking.h>
+
+#import "ActivityDetailViewController.h"
+#import "MovieDetailViewController.h"
+#import "TheaterDetailViewController.h"
+
+#import "MovieDetailModel.h"
+
+#import "GiFHUD.h"
+
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+//#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+//#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+//#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+//#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+//#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="141" id="KGk-i7-Jjw" customClass="MovieTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_eventlistcell.png" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-AQ-thc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPH-1D-6rg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bmk-b2-cap">
+                                <rect key="frame" x="8" y="8" width="105" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="5Vy-b7-Qwc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电影名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7z-z6-7mK">
+                                <rect key="frame" x="121" y="19" width="285" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CpH-5E-3j2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星级：XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8L-QE-ilb">
+                                <rect key="frame" x="121" y="59" width="285" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="j2N-1y-PKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上映时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcO-FR-nDo">
+                                <rect key="frame" x="121" y="94" width="285" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Gwa-9b-mhj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q7z-z6-7mK" firstAttribute="leading" secondItem="Bmk-b2-cap" secondAttribute="trailing" constant="8" id="1QK-vG-Ton"/>
+                            <constraint firstItem="Bmk-b2-cap" firstAttribute="top" secondItem="EPH-1D-6rg" secondAttribute="top" constant="8" id="9i7-Wx-qPe"/>
+                            <constraint firstItem="Z8L-QE-ilb" firstAttribute="top" secondItem="Q7z-z6-7mK" secondAttribute="bottom" constant="19" id="CAq-hf-cED"/>
+                            <constraint firstItem="Bmk-b2-cap" firstAttribute="leading" secondItem="EPH-1D-6rg" secondAttribute="leading" constant="8" id="JFG-pa-i1t"/>
+                            <constraint firstAttribute="trailing" secondItem="Z8L-QE-ilb" secondAttribute="trailing" constant="8" id="Oaa-M9-oIB"/>
+                            <constraint firstItem="HcO-FR-nDo" firstAttribute="leading" secondItem="Bmk-b2-cap" secondAttribute="trailing" constant="8" id="Ors-5b-2Lg"/>
+                            <constraint firstAttribute="bottom" secondItem="Bmk-b2-cap" secondAttribute="bottom" constant="4" id="c6y-Na-S9U"/>
+                            <constraint firstAttribute="trailing" secondItem="Q7z-z6-7mK" secondAttribute="trailing" constant="8" id="hFK-yl-nuo"/>
+                            <constraint firstItem="Q7z-z6-7mK" firstAttribute="top" secondItem="EPH-1D-6rg" secondAttribute="top" constant="19" id="kO9-WF-OA0"/>
+                            <constraint firstItem="Z8L-QE-ilb" firstAttribute="leading" secondItem="Bmk-b2-cap" secondAttribute="trailing" constant="8" id="rjc-9V-CTP"/>
+                            <constraint firstAttribute="trailing" secondItem="HcO-FR-nDo" secondAttribute="trailing" constant="8" id="rl7-IM-vW9"/>
+                            <constraint firstItem="HcO-FR-nDo" firstAttribute="top" secondItem="Z8L-QE-ilb" secondAttribute="bottom" constant="14" id="tJt-zg-bb6"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmk-b2-cap" secondAttribute="trailing" constant="301" id="vdP-He-WgT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EPH-1D-6rg" secondAttribute="trailing" id="0I7-vV-VYc"/>
+                    <constraint firstItem="EPH-1D-6rg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1Jr-Sp-jT0"/>
+                    <constraint firstItem="KzW-AQ-thc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BrM-mQ-Mvi"/>
+                    <constraint firstAttribute="bottom" secondItem="EPH-1D-6rg" secondAttribute="bottom" id="LXg-kv-odb"/>
+                    <constraint firstAttribute="trailing" secondItem="KzW-AQ-thc" secondAttribute="trailing" id="X2l-eA-Yv8"/>
+                    <constraint firstAttribute="bottom" secondItem="KzW-AQ-thc" secondAttribute="bottom" id="dNa-FC-Und"/>
+                    <constraint firstItem="KzW-AQ-thc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ejc-Gh-jtb"/>
+                    <constraint firstItem="EPH-1D-6rg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fqm-YC-I4V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="movieImageView" destination="Bmk-b2-cap" id="54P-wX-GGk"/>
+                <outlet property="movieName" destination="Q7z-z6-7mK" id="hSY-ai-7dG"/>
+                <outlet property="pubdateLabel" destination="HcO-FR-nDo" id="tYX-y9-DmG"/>
+                <outlet property="ratingLabel" destination="Z8L-QE-ilb" id="BWT-PE-bNi"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="324.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_eventlistcell.png" width="304" height="140"/>
+    </resources>
+</document>
